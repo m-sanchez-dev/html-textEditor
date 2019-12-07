@@ -1,5 +1,5 @@
 # html-textEditor
-Own test editor made in HTML
+It will be pretty simple and won’t have many features, but it will be of your making, even if you barely know how to code.
 
 ## What I’ll need
 
@@ -19,3 +19,7 @@ Own test editor made in HTML
 4. As a final touch, I’ll add some lines of code that tell JavaScript to look for anything in Localstorage once the page loads. This will ensure that our text is recalled when I reload the page. 
 
 The result will be a very simple-looking, yet a functional text editor with auto-save. You can quit and reload your browser, even restart your computer, and your text will stay there. 
+
+## License
+
+[MIT - License](LICENSE.md)
