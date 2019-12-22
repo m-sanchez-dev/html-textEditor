@@ -20,6 +20,14 @@ It will be pretty simple and won’t have many features, but it will be of your 
 
 The result will be a very simple-looking, yet a functional text editor with auto-save. You can quit and reload your browser, even restart your computer, and your text will stay there. 
 
+After that I will continue adding some features, and trying to make a better text editor.
+
+## Features
+
+* Autosave: Everytime you press a key the file will be saved on memory, so if you close and open the tab again. The text will be still there.
+* Dark mode support: It has native dark mode support. If your device has the darkmode ON, the appearance of the application will change.
+* Auto close: This caracters ('(', '{', '[') are closed automatically.
+
 ## License
 
 [MIT - License](LICENSE.md)
