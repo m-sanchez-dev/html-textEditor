@@ -26,6 +26,7 @@ After that I will continue adding some features, and trying to make a better tex
 
 * Autosave: Everytime you press a key the file will be saved on memory, so if you close and open the tab again. The text will be still there.
 * Dark mode support: It has native dark mode support. If your device has the darkmode ON, the appearance of the application will change.
+* Auto close: This caracters ('(', '{', '[') are closed automatically.
 
 ## License
 
