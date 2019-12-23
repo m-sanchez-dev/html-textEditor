@@ -30,4 +30,4 @@ After that I will continue adding some features, and trying to make a better tex
 
 ## License
 
-[MIT - License](LICENSE.md)
+[MIT - License](LICENSE)
