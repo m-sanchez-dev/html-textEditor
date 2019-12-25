@@ -28,6 +28,12 @@ After that I will continue adding some features, and trying to make a better tex
 * Dark mode support: It has native dark mode support. If your device has the darkmode ON, the appearance of the application will change.
 * Auto close: This caracters ('(', '{', '[') are closed automatically.
 
+## ToDo
+[ ] Fix tab interaction
+[ ] Support for diferent files
+
+Think if diferent format support is viable or no. 
+
 ## License
 
 [MIT - License](LICENSE)
