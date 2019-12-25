@@ -11,10 +11,21 @@ if (localStorage.getItem("text_in_editor") !== null) {
 
 // listen to key presses
 document.addEventListener("keydown", function(e) {
+  // get the textArea
   textArea = document.getElementById("editor");
+
+  // checks for special character for autocomplete
+  chekForSpecialCharacter(e.key);
+
+  // once a key is pressed, save whatever's in our box to localstorage
+  saveTextArea();
+});
+
+function chekForSpecialCharacter(character) {
   endKeys = ["(", "[", "{"];
-  if (endKeys.includes(e.key)) {
-    switch (e.key) {
+
+  if (endKeys.includes(character)) {
+    switch (character) {
       case "(":
         text = ")";
         break;
@@ -27,9 +38,7 @@ document.addEventListener("keydown", function(e) {
     }
     insertTextAtCursor(text);
   }
-  // once a key is pressed, save whatever's in our box to localstorage
-  saveTextArea();
-});
+}
 
 function insertTextAtCursor(text) {
   var sel, range;
@@ -54,6 +63,7 @@ function saveTextArea() {
 }
 
 function returnSavedData() {
+  // print saved data into textDiv
   document.getElementById("editor").innerHTML = localStorage.getItem(
     "text_in_editor"
   );
