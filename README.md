@@ -29,6 +29,7 @@ After that I will continue adding some features, and trying to make a better tex
 * Auto close: This caracters ('(', '{', '[') are closed automatically.
 
 ## ToDo
+
 [ ] Fix tab interaction
 [ ] Support for diferent files
 
