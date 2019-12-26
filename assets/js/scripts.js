@@ -60,9 +60,6 @@ if (localStorage.getItem("text_in_editor") !== null) {
 
 // listen to key presses
 document.addEventListener("keydown", function(e) {
-  // get the textArea
-  textArea = document.getElementById("editor");
-
   // checks for special character for autocomplete
   chekForSpecialCharacter(e.key);
 
