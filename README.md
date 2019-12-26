@@ -1,4 +1,7 @@
 # html-textEditor
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/725e85bb8d344632880e79ee1ec7ea02)](https://www.codacy.com/manual/swallyx/html-textEditor?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sWallyx/html-textEditor&amp;utm_campaign=Badge_Grade)
+
 It will be pretty simple and won’t have many features, but it will be of your making, even if you barely know how to code.
 
 ## What I’ll need
