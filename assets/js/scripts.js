@@ -1,28 +1,8 @@
 // Script file, with all the JS code that will make the editor work
 
-// focus on the editor
-document.getElementById("editor").focus();
-
-// If there's anything in the storage
-if (localStorage.getItem("text_in_editor") !== null) {
-  // ...then show it
-  returnSavedData();
-}
-
-// listen to key presses
-document.addEventListener("keydown", function(e) {
-  // get the textArea
-  textArea = document.getElementById("editor");
-
-  // checks for special character for autocomplete
-  chekForSpecialCharacter(e.key);
-
-  // once a key is pressed, save whatever's in our box to localstorage
-  saveTextArea();
-});
-
 function chekForSpecialCharacter(character) {
-  endKeys = ["(", "[", "{"];
+  var endKeys = ["(", "[", "{"];
+  var text = "";
 
   if (endKeys.includes(character)) {
     switch (character) {
@@ -68,3 +48,24 @@ function returnSavedData() {
     "text_in_editor"
   );
 }
+
+// focus on the editor
+document.getElementById("editor").focus();
+
+// If there's anything in the storage
+if (localStorage.getItem("text_in_editor") !== null) {
+  // ...then show it
+  returnSavedData();
+}
+
+// listen to key presses
+document.addEventListener("keydown", function(e) {
+  // get the textArea
+  textArea = document.getElementById("editor");
+
+  // checks for special character for autocomplete
+  chekForSpecialCharacter(e.key);
+
+  // once a key is pressed, save whatever's in our box to localstorage
+  saveTextArea();
+});
