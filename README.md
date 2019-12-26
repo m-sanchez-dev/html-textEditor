@@ -1,4 +1,7 @@
 # html-textEditor
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/725e85bb8d344632880e79ee1ec7ea02)](https://www.codacy.com/manual/swallyx/html-textEditor?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sWallyx/html-textEditor&amp;utm_campaign=Badge_Grade)
+
 It will be pretty simple and won’t have many features, but it will be of your making, even if you barely know how to code.
 
 ## What I’ll need
@@ -28,6 +31,13 @@ After that I will continue adding some features, and trying to make a better tex
 * Dark mode support: It has native dark mode support. If your device has the darkmode ON, the appearance of the application will change.
 * Auto close: This caracters ('(', '{', '[') are closed automatically.
 
+## ToDo
+
+* [ ] Fix tab interaction
+* [ ] Support for diferent files
+
+Think if diferent format support is viable or no. 
+
 ## License
 
-[MIT - License](LICENSE.md)
+[MIT - License](LICENSE)

@@ -1,20 +1,11 @@
 // Script file, with all the JS code that will make the editor work
 
-// focus on the editor
-document.getElementById("editor").focus();
+function chekForSpecialCharacter(character) {
+  var endKeys = ["(", "[", "{"];
+  var text = "";
 
-// If there's anything in the storage
-if (localStorage.getItem("text_in_editor") !== null) {
-  // ...then show it
-  returnSavedData();
-}
-
-// listen to key presses
-document.addEventListener("keydown", function(e) {
-  textArea = document.getElementById("editor");
-  endKeys = ["(", "[", "{"];
-  if (endKeys.includes(e.key)) {
-    switch (e.key) {
+  if (endKeys.includes(character)) {
+    switch (character) {
       case "(":
         text = ")";
         break;
@@ -27,9 +18,7 @@ document.addEventListener("keydown", function(e) {
     }
     insertTextAtCursor(text);
   }
-  // once a key is pressed, save whatever's in our box to localstorage
-  saveTextArea();
-});
+}
 
 function insertTextAtCursor(text) {
   var sel, range;
@@ -54,7 +43,26 @@ function saveTextArea() {
 }
 
 function returnSavedData() {
+  // print saved data into textDiv
   document.getElementById("editor").innerHTML = localStorage.getItem(
     "text_in_editor"
   );
 }
+
+// focus on the editor
+document.getElementById("editor").focus();
+
+// If there's anything in the storage
+if (localStorage.getItem("text_in_editor") !== null) {
+  // ...then show it
+  returnSavedData();
+}
+
+// listen to key presses
+document.addEventListener("keydown", function(e) {
+  // checks for special character for autocomplete
+  chekForSpecialCharacter(e.key);
+
+  // once a key is pressed, save whatever's in our box to localstorage
+  saveTextArea();
+});
