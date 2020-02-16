@@ -33,6 +33,10 @@ After that I will continue adding some features, and trying to make a better tex
 
 ## ToDo
 
+* [x] Auto save
+* [x] Dark mode support
+* [x] Enable auto character close
+* [x] Code documentation
 * [ ] Fix tab interaction
 * [ ] Support for diferent files
 
